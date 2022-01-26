@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "760801258293",
+    "firebase_url": "https://webmobile-48ab0.firebaseio.com",
+    "project_id": "webmobile-48ab0",
+    "storage_bucket": "webmobile-48ab0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760801258293:android:011dc09b937637b3eaba7c",
+        "android_client_info": {
+          "package_name": "com.bridingmodules"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760801258293-jbvceqs4t58s1lq4mkhc6u5o3l7rgf2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDaPjQ8VRceYvUON5IytnUKmwNGQKEnjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760801258293-3ci4se8j51mchi8abbn7cq1se0mqqgr9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "760801258293-kedti76p96abfted2qo9hpnsivqco3n9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fyp.reporter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760801258293:android:22dd338692f98bd4eaba7c",
+        "android_client_info": {
+          "package_name": "com.fyp.reporter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760801258293-jbvceqs4t58s1lq4mkhc6u5o3l7rgf2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDaPjQ8VRceYvUON5IytnUKmwNGQKEnjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760801258293-3ci4se8j51mchi8abbn7cq1se0mqqgr9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "760801258293-kedti76p96abfted2qo9hpnsivqco3n9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fyp.reporter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
