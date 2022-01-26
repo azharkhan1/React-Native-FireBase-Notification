@@ -1,6 +1,5 @@
 import React,{useEffect,useState,} from "react";
 import {View,Text,Platform} from "react-native";
-import messaging from "@react-native-firebase/messaging";
 import Notification from "./src/Notification";
 
 function App(){
@@ -8,7 +7,7 @@ function App(){
 
   useEffect(()=>{
     Notification.appMount();
-
+    console.log('apmount')
     return()=>{
       Notification.unMount();
     }

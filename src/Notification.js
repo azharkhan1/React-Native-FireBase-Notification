@@ -1,7 +1,5 @@
 import { Alert, Platform } from "react-native";
 import messaging from "@react-native-firebase/messaging";
-import notifee from '@notifee/react-native';
-import notifee, { EventType } from "@notifee/react-native";
 class NotificationsHelper {
   getToken = () => {
     messaging()
@@ -23,39 +21,35 @@ class NotificationsHelper {
       this.onDisplayNotification(remoteMessage);
     });
 
+    this.getToken();
+  
     messaging().setBackgroundMessageHandler(async remoteMessage => {
       console.log("Message handled in the background!", remoteMessage);
     });
 
-    messaging().onNotificationOpenedApp(remoteMessage => {
-      console.log(
-        "Notification caused app to open from background state:",
-        remoteMessage.notification
-      );
-      alert("Notification opened");
-    });
+
   };
 
   handleAndroidNotificationPost = async notification => {
     console.log("handleAndroidNotificationPost", notification);
 
     // Create a channel
-    const channelId = await notifee.createChannel({
-      id: "default",
-      name: "Default Channel"
-    });
+    // const channelId = await notifee.createChannel({
+    //   id: "default",
+    //   name: "Default Channel"
+    // });
 
-    // Display a notification
-    await notifee.displayNotification({
-      // title: this.getLocalizedTitle(notification),
-      // body: this.getLocalizedBody(notification),
-      title: notification.notification.title,
-      body: notification.notification.body,
-      android: {
-        channelId,
-        smallIcon: "ic_launcher" // optional, defaults to 'ic_launcher'.
-      }
-    });
+    // // Display a notification
+    // await notifee.displayNotification({
+    //   // title: this.getLocalizedTitle(notification),
+    //   // body: this.getLocalizedBody(notification),
+    //   title: notification.notification.title,
+    //   body: notification.notification.body,
+    //   android: {
+    //     channelId,
+    //     smallIcon: "ic_launcher" // optional, defaults to 'ic_launcher'.
+    //   }
+    // });
   };
 
   onDisplayNotification = notification => {
@@ -107,12 +101,15 @@ class NotificationsHelper {
     this.messageListener();
   };
 
+ 
+
   dataAndMessageReceiveHandler = notification => {
     const data = notification.data;
 
     console.log(data);
     alert("Received in foreground");
   };
+ 
 
   onDisplayLocalNotification = async () => {
     // Create a channel

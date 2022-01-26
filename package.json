@@ -10,7 +10,6 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@notifee/react-native": "^4.0.1",
     "@react-native-firebase/app": "^14.2.4",
     "@react-native-firebase/in-app-messaging": "^14.2.4",
     "@react-native-firebase/messaging": "^14.2.4",
